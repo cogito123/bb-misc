@@ -1,15 +1,19 @@
 ---Applies 25% movement speed bonus to captains
 ---Applies 10% movement speed bonus to players picked in initial picking phase
 ---No movement speed bonus to players picked in late picking phase
+---Changes default pick timer to 15min.
 
 ---This script must be executed still in the lobby, before initial picking phase.
 ---Script will autodetect who is captain and who are other players based on match time.
 
+---Copy from next line until the end of this file.
+/sc
 if storage.cptms then
   game.print("Movement speed bonus is active already!")
   return
 end
 
+storage.special_games_variables.captain_mode.autoPickIntervalTicks = 54000
 storage.cptms = {
     cpt = {},
     players = {},
@@ -105,7 +109,6 @@ Event.add_removable_function(
   "cptms_on_player_joined_team"
 )
 
---[[ clean up events --]]
 local on_surface_deleted = [[function(event)
     game.print("Movement speed bonus removed")
     storage.cptms = nil
