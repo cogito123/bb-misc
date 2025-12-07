@@ -1,15 +1,19 @@
 --- Point a cursor at a captain that shall receive pack and execute
---- any of the below scripts.
+--- any of the below scripts. Each command starts with /sc and ends
+--- with "-- END"
 
 -- PACKS
 -- ECONOMY
+/sc
 local player = game.player.selected
 player.insert{name="stone-furnace", count = 70}
 player.insert{name="burner-mining-drill", count = 20}
 player.insert{name="coal", count = 300}
 player.insert{name="wood", count = 100}
+-- END
 
 -- AUTOMATION
+/sc
 local player = game.player.selected
 player.insert{name="assembling-machine-1", count = 5}
 player.insert{name="transport-belt", count = 200}
@@ -17,15 +21,19 @@ player.insert{name="inserter", count = 50}
 player.insert{name="splitter", count = 1}
 player.insert{name="electric-mining-drill", count = 2}
 player.insert{name="wood", count = 100}
+-- END
 
 -- SCIENCE
+/sc
 local player = game.player.selected
 player.insert{name="automation-science-pack", count = 70}
 player.insert{name="logistic-science-pack", count = 32}
 player.insert{name="lab", count = 8}
 player.insert{name="wood", count = 100}
+-- END
 
--- POWER
+-- 20MW POWER
+/sc
 local player = game.player.selected
 player.insert{name="wood", count = 100}
 
@@ -42,8 +50,10 @@ e.minable = false
 e.operable = false
 e.destructible = false
 e.force = "neutral"
+-- END
 
--- TF
+-- THREAT FARMING
+/sc
 local player = game.player.selected
 player.insert{name="shotgun", count = 3}
 player.insert{name="heavy-armor", count = 3}
@@ -51,10 +61,13 @@ player.insert{name="grenade", count = 75}
 player.insert{name="raw-fish", count = 100}
 player.insert{name="shotgun-shell", count = 75}
 player.insert{name="wood", count = 100}
+-- END
 
--- DEF
+-- DEFENSE
+/sc
 local player = game.player.selected
 player.insert{name="firearm-magazine", count = 50}
 player.insert{name="gun-turret", count = 5}
 player.insert{name="flamethrower-turret", count = 10}
 player.insert{name="wood", count = 100}
+-- END
