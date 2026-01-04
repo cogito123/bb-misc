@@ -1,13 +1,13 @@
----Applies 25% movement speed bonus to captains
----Applies 10% movement speed bonus to players picked in initial picking phase
----No movement speed bonus to players picked in late picking phase
----Changes default pick timer to 15min.
-
----This script must be executed still in the lobby, before initial picking phase.
----Script will autodetect who is captain and who are other players based on match time.
-
----Copy from next line until the end of this file.
 /sc
+--[[
+Applies 25% movement speed bonus to captains
+Applies 10% movement speed bonus to players picked in initial picking phase
+No movement speed bonus to players picked in late picking phase
+Changes default pick timer to 15min.
+
+This script must be executed still in the lobby, before initial picking phase.
+Script will autodetect who is captain and who are other players based on match time.
+--]]
 if storage.cptms then
   game.print("Movement speed bonus is active already!")
   return
