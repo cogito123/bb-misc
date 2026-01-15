@@ -6,9 +6,9 @@
 -- ECONOMY
 /sc
 local player = game.player.selected.player
-player.insert{name="stone-furnace", count = 70}
-player.insert{name="burner-mining-drill", count = 20}
-player.insert{name="coal", count = 300}
+player.insert{name="stone-furnace", count = 60}
+player.insert{name="burner-mining-drill", count = 15}
+player.insert{name="coal", count = 275}
 player.insert{name="wood", count = 100}
 game.print("[font=infinite]Captain " .. player.name .. " has chosen economy pack![/font]")
 -- END
@@ -20,7 +20,7 @@ player.insert{name="assembling-machine-1", count = 5}
 player.insert{name="transport-belt", count = 200}
 player.insert{name="inserter", count = 50}
 player.insert{name="splitter", count = 1}
-player.insert{name="electric-mining-drill", count = 8}
+player.insert{name="electric-mining-drill", count = 10}
 player.insert{name="wood", count = 100}
 game.print("[font=infinite]Captain " .. player.name .. " has chosen automation pack![/font]")
 -- END
@@ -28,8 +28,8 @@ game.print("[font=infinite]Captain " .. player.name .. " has chosen automation p
 -- SCIENCE
 /sc
 local player = game.player.selected.player
-player.insert{name="automation-science-pack", count = 80}
-player.insert{name="logistic-science-pack", count = 40}
+player.insert{name="automation-science-pack", count = 70}
+player.insert{name="logistic-science-pack", count = 35}
 player.insert{name="lab", count = 8}
 player.insert{name="wood", count = 100}
 
@@ -45,7 +45,7 @@ game.print("[font=infinite]Captain " .. player.name .. " has chosen science pack
 local player = game.player.selected.player
 player.insert{name="shotgun", count = 2}
 player.insert{name="heavy-armor", count = 2}
-player.insert{name="grenade", count = 70}
+player.insert{name="grenade", count = 100}
 player.insert{name="raw-fish", count = 100}
 player.insert{name="shotgun-shell", count = 70}
 player.insert{name="wood", count = 100}
@@ -57,7 +57,7 @@ game.print("[font=infinite]Captain " .. player.name .. " has chosen threat farmi
 local player = game.player.selected.player
 player.insert{name="firearm-magazine", count = 50}
 player.insert{name="gun-turret", count = 5}
-player.insert{name="flamethrower-turret", count = 10}
+player.insert{name="flamethrower-turret", count = 12}
 player.insert{name="wood", count = 100}
 game.print("[font=infinite]Captain " .. player.name .. " has chosen defense pack![/font]")
 -- END
@@ -109,6 +109,6 @@ local position = {
     y = (-38 + off) * flip,
 }
 local s = player.surface
-build_solar(s, position, 333)
+build_solar(s, position, 417)
 game.print("[font=infinite]Captain " .. player.name .. " has chosen power pack![/font]")
 -- END
